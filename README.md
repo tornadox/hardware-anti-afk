@@ -1,72 +1,118 @@
-# Anti AFK Tool for Online Games using ATTINY85 Digispark
+# 🎮 Anti AFK Tool for Online Games using ATTINY85 Digispark
 
-## Overview
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=Arduino&logoColor=white)](https://www.arduino.cc/)
 
-This project utilizes the ATTINY85 Digispark module to simulate keyboard actions as a simple Anti AFK (Away From Keyboard) tool for online games, such as GTA Online. By utilizing this tool, players can keep their character active in the game, enabling them to farm for money and experience points (XP) while avoiding detection from anti-cheat systems.
+## 📖 Overview
 
-## Features
+This project utilizes the ATTINY85 Digispark module to simulate keyboard actions as a simple Anti AFK (Away From Keyboard) tool for online games. Keep your character active while farming for in-game resources, all while staying undetected by common anti-cheat systems.
 
-- Simulates key presses (W, A, S, D, SPACE) to keep the game character active.
-- Configurable delay intervals to mimic user behavior.
-- Easy to upload and use with the ATTINY85.
+## ✨ Features
 
-## Files
+- 🎯 Simulates key presses (W, A, S, D, SPACE)
+- ⏱️ Configurable delay intervals
+- 💡 LED status indication
+- 🎲 Random delay patterns
+- 🔌 Plug-and-play USB interface
 
-This repository contains two code files depending on your needs or the specific behavior you would like to implement:
+## 📁 Files
 
-1. **FullKeyPressAntiAFK.ino** - A more complex version that includes LED indication and random delays.
-2. **SimpleKeyPressAntiAFK.ino** - A simplified version with consistent timing.
+Choose the version that best suits your needs:
 
-## Setup
+| File Name | Description |
+|-----------|-------------|
+| `FullKeyPressAntiAFK.ino` | Advanced version with LED indicators and random delays |
+| `SimpleKeyPressAntiAFK.ino` | Minimalist version with consistent timing |
 
-### Hardware Required
+## 🛠️ Setup
+
+### Hardware Requirements
 
 - ATTINY85 Digispark module
 
-### Software Required
+### Software Requirements
 
-- Arduino IDE with Digispark board support installed.
-- Digispark libraries.
+- Arduino IDE
+- Digispark board support package
+- Required libraries
 
-### Installation Steps
+### 📥 Installation Steps
 
-1. **Install Arduino IDE**: If you haven't already, download and install the Arduino IDE from [Arduino's Official Website](https://www.arduino.cc/en/software).
+1. **Arduino IDE Setup**
+   ```bash
+   # Install Arduino IDE from:
+   https://www.arduino.cc/en/software
+   ```
 
-2. **Set Up Digispark**:
-   - In the Arduino IDE, go to `File` -> `Preferences`.
-   - In the "Additional Boards Manager URLs" field, add: `http://digistump.com/package_digistump_index.json`
-   - Open `Tools` -> `Boards Manager`, search for "Digistump AVR Boards" and install.
+2. **Configure Digispark Support**
+   - Open Arduino IDE preferences
+   - Add to Board Manager URLs:
+     ```
+     http://digistump.com/package_digistump_index.json
+     ```
+   - Install "Digistump AVR Boards" via Boards Manager
 
-3. **Load the Code**:
-   - Open `FullKeyPressAntiAFK.ino` or `SimpleKeyPressAntiAFK.ino` in Arduino IDE.
-   - Select the appropriate board: `Tools` -> `Board` -> `Digispark (USB)`.
+3. **Upload Process**
+   - Open desired `.ino` file
+   - Select `Digispark (USB)` board
+   - Click upload and follow prompts
 
-4. **Program the Digispark**:
-   - Connect the Digispark module to your computer.
-   - Click on the upload button in the Arduino IDE.
-   - The IDE will show a prompt; when it asks you to plug in your Digispark, do so and wait for the upload to complete.
+## 🎯 Usage
 
-### Usage
+1. Connect Digispark to USB
+2. Launch your game
+3. Monitor LED for activity status
 
-1. Once uploaded, plug the Digispark module into your USB port.
-2. Launch your game (e.g., GTA Online).
-3. Observe the LED indicator for every key press action.
+### Version Selection Guide
 
-### Choose Your Code
+| Feature | FullKeyPressAntiAFK | SimpleKeyPressAntiAFK |
+|---------|--------------------|-----------------------|
+| LED Indicator | ✅ | ❌ |
+| Random Delays | ✅ | ❌ |
+| Memory Usage | Higher | Lower |
+| Complexity | Advanced | Basic |
 
-- **Complex Behavior**: For more nuanced behavior including random delays to mimic human input behavior, use `FullKeyPressAntiAFK.ino`.
-- **Simple Behavior**: For straightforward keypress actions at regular intervals, select `SimpleKeyPressAntiAFK.ino`.
+## ⚠️ Important Notes
 
-> **Note**: Using such tools may violate the terms of service of some games. Use at your own risk. Always be vigilant about the ethical implications of using automated tools, especially in online environments.
+```diff
+- Using automation tools may violate game terms of service
+! Use at your own risk
++ Educational purposes only
+```
 
-## Contribution
+## 🤝 Contribution
 
-Feel free to fork the repository, make improvements, and submit pull requests! Contributions on improving the stability, new features, or additional functionalities are welcome.
+We welcome contributions! Here's how:
 
-## License
+1. Fork the repository
+2. Create your feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes
+4. Push and submit a Pull Request
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 License
 
-## Disclaimer
+This project is under the MIT License. See [LICENSE](LICENSE) for details.
 
-This tool is intended for educational and experimental purposes only. The developers are not responsible for any consequences resulting from the use of this tool or any violations of game rules or terms of service that may occur as a result. Engaging in behavior that goes against the platform's regulations can result in bans or other penalties. Use responsibly!
+## ⚖️ Disclaimer
+
+```
+This tool is for educational purposes only. The developers assume no 
+responsibility for any consequences resulting from its use. Users must 
+comply with all applicable game rules and terms of service.
+```
+
+## 🔗 Quick Links
+
+- [Arduino IDE Download](https://www.arduino.cc/en/software)
+- [Digistump Wiki](http://digistump.com/wiki/digispark)
+- [Report Issues](../../issues)
+- [Request Features](../../issues)
+
+---
+
+<div align="center">
+   Made with ❤️ by [Your Username]
+</div>
